@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "bun run --watch server.ts",
-    "build": "bun dev",
+    "build": "vite build",
     "lint": "eslint .",
+    "start": "bun run server.ts",
     "preview": "vite preview"
   },
   "dependencies": {
