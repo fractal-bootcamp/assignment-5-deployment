@@ -32,6 +32,9 @@ COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /usr/src/app/src ./src
 COPY --from=prerelease /usr/src/app/. .
 
+# Set correct permissions for the app directory
+RUN chown -R bun:bun /usr/src/app
+
 # run the app
 USER bun
 EXPOSE 3000/tcp
