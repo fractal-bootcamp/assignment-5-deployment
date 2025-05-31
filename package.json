@@ -2,11 +2,13 @@
   "name": "tic-tac-toe",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "bun@1.1.19",
   "type": "module",
   "scripts": {
     "dev": "bun run --watch server.ts",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
+    "start": "bun run server.ts",
     "preview": "vite preview"
   },
   "dependencies": {
